@@ -8,14 +8,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-ul {
+nav ul {
   list-style-type: none;
 }
 
-/* .container {
-  width: 80%;
-  margin: auto;
-} */
+
+a {
+  text-decoration: none;
+  /* color: #fff; */
+}
 
 section.navbar {
   padding: 15px 100px;
@@ -26,14 +27,9 @@ section {
   padding: 60px 100px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .row {
   display: flex;
   justify-content: center;
-
   align-items: center;
   flex-wrap: wrap;
 }
@@ -59,6 +55,22 @@ a {
   display: block;
 }
 
+.category .top {
+  position: fixed;
+  right: 3%;
+  bottom: 10%;
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 5px;
+  border-radius:20px ;
+  transition: all 1s;
+}
+.category .top:hover {
+  background: #ff523b;
+  border: none;
+  color: #fff;
+  transition: all 1s;
+}
 /* start of navbar */
 
 .navbar {
@@ -86,15 +98,16 @@ nav ul {
   transition: 0.5s;
 }
 
-ul {
-  /* padding-bottom: 15px; */
-}
 nav ul li {
   display: inline;
   margin: 0px 10px;
   cursor: pointer;
   font-weight: 600;
   font-size: 1.1rem;
+}
+
+nav ul li a {
+  color: #000;
 }
 
 /* end of navbar */
